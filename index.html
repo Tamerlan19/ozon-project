@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Ozon</title>
   </head>
@@ -11,41 +11,42 @@
         <div class="wraper">
       <div class="progress">
         <div class="progress__title">
-          <p>Progress<p>
+          <p>Progress</p>
         </div>
-        <div class="progress__circle">
-          <svg
-            width="104"
-            height="104"
-            viewBox="0 0 104 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            
-            <circle
-              cx="52"
-              cy="52"
-              r="50"
-              stroke="#CFD2CF"
-              stroke-width="4"
-              fill="none"
-            />
-        
-            
-            <circle
-              class="progress__arc"
-              cx="52"
-              cy="52"
-              r="50"
-              stroke="#24C229"
-              stroke-width="4"
-              fill="none"
-              stroke-dasharray="314"
-              stroke-dashoffset="314"
-              transform="rotate(-90 52 52)"
-            />
-          </svg>
-        </div>
+<div class="progress__circle">
+  <svg
+    width="126"
+    height="126"
+    viewBox="0 0 126 126"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    
+    <circle
+      cx="63"
+      cy="63"
+      r="60"
+      stroke="#CFD2CF"
+      stroke-width="6"
+      fill="none"
+    />
+
+    
+    <circle
+      class="progress__arc"
+      cx="63"
+      cy="63"
+      r="60"
+      stroke="#24C229"
+      stroke-width="6"
+      fill="none"
+      stroke-dasharray="377"
+      stroke-dashoffset="377"
+      transform="rotate(-90 63 63)"
+    />
+  </svg>
+</div>
+
         
     </div>
     
@@ -62,7 +63,7 @@
           <div class="control__subtitle">Animate</div>
         </div>
         
-        <div class="control ">
+        <div class="control control--value">
           <input class="control__input" type="checkbox" id="hide-toggle" />
           <label for="hide-toggle" class="control__toggle"></label>
           <div class="control__subtitle">Hide</div>
