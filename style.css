@@ -1,4 +1,4 @@
-@import '/node_modules/@a1rth/css-normalize/index.css';
+@import "css/index.css";
 body {
   margin: 0;
   padding: 0;
