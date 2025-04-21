@@ -8,9 +8,10 @@
   </head>
   <body>
     <div class="main">
+        <div class="wraper">
       <div class="progress">
         <div class="progress__title">
-          <h1>Progress</h1>
+          <p>Progress<p>
         </div>
         <div class="progress__circle">
           <svg
@@ -20,31 +21,56 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="52" cy="52" r="50" stroke="#24C229" stroke-width="4" />
+            
+            <circle
+              cx="52"
+              cy="52"
+              r="50"
+              stroke="#CFD2CF"
+              stroke-width="4"
+              fill="none"
+            />
+        
+            
+            <circle
+              class="progress__arc"
+              cx="52"
+              cy="52"
+              r="50"
+              stroke="#24C229"
+              stroke-width="4"
+              fill="none"
+              stroke-dasharray="314"
+              stroke-dashoffset="314"
+              transform="rotate(-90 52 52)"
+            />
           </svg>
         </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel__controls">
-          <div class="control control--value">
-            <input class="control__input" type="text" id="value-input" />
-            <div class="control__subtitle">Value</div>
-          </div>
-
-          <div class="control control--animate">
-            <input class="control__input" type="checkbox" id="animate-toggle" />
-            <label for="animate-toggle" class="control__toggle"></label>
-            <div class="control__subtitle">Animate</div>
-          </div>
-
-          <div class="control control--hide">
-            <input class="control__input" type="checkbox" id="hide-toggle" />
-            <label for="hide-toggle" class="control__toggle"></label>
-            <div class="control__subtitle">Hide</div>
-          </div>
+        
+    </div>
+    
+    <div class="panel">
+      <div class="panel__controls">
+        <div class="control control--value">
+          <input class="control__input" type="text" id="value-input" />
+          <div class="control__subtitle">Value</div>
+        </div>
+        
+        <div class="control ">
+          <input class="control__input control__input--animate" type="checkbox" id="animate-toggle" />
+          <label for="animate-toggle" class="control__toggle"></label>
+          <div class="control__subtitle">Animate</div>
+        </div>
+        
+        <div class="control ">
+          <input class="control__input" type="checkbox" id="hide-toggle" />
+          <label for="hide-toggle" class="control__toggle"></label>
+          <div class="control__subtitle">Hide</div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+  </div>
+</body>
+<script src="sctipts/main.js"></script>
 </html>

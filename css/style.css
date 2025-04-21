@@ -3,16 +3,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  
   min-height: 100vh;
-}
 
+}
+.wraper{
+  width: 320px;
+  height: 568px;
+  border:#000000 1px solid;
+}
 .progress {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
+  font-size: 24px;  
 }
+.progress__title{
+  align-self: flex-start;
+}
+.progress__arc {
+  transition: stroke-dashoffset 0.5s ease;
+}
+.progress__circle {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: scale(1);
+  will-change: opacity, transform;
+}
+
+.progress__circle--hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none; 
+}
+
 
 .panel__controls {
   display: flex;
@@ -31,6 +56,7 @@
 
 .control__toggle {
   display: inline-block;
+  flex-shrink: 0;
   width: 50px;
   height: 25px;
   background-color: #dedede;
@@ -57,7 +83,8 @@
   transform: translateX(25px);
 }
 
-/* Скрываю инпуты где есть переключатель */
+
+/* скрываю инпуты где есть переключатель */
 .control__input[type='checkbox'] {
   position: absolute;
   width: 0;
@@ -67,7 +94,7 @@
   overflow: hidden;
   border: 0;
 }
-
+/* скрываю инпут с текстом */
 .control__input[type='text'] {
   display: inline-block;
   width: 50px;
@@ -77,3 +104,4 @@
   padding: 2px;
   text-align: center;
 }
+
